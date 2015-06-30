@@ -1,0 +1,23 @@
+{
+  "Datacenter": "LV1",
+  "Node": "foobar",
+  "Address": "192.168.10.10",
+  "Service": {
+    "ID": "redis1",
+    "Service": "redis",
+    "Tags": [
+      "master",
+      "v1"
+    ],
+    "Address": "127.0.0.1",
+    "Port": 8000
+  },
+  "Check": {
+    "Node": "foobar",
+    "CheckID": "service:redis1",
+    "Name": "Redis health check",
+    "Notes": "Script based health check",
+    "Status": "passing",
+    "ServiceID": "redis1"
+  }
+}
